@@ -1,0 +1,21 @@
+#!/bin/bash
+#give some input when calling: for example aa bb cc dd 
+
+#shows that function variables are not global to the script
+function special {
+        echo $0 $1 $2 $3
+        local var1="in here"
+        echo $0 var1 $var1
+}
+#IFS sets default separator to -
+IFS=-
+echo "start 1: $*"
+echo "start 2: $@"
+
+#counts number of given input
+echo "start 3: $#"
+
+var1="sopasopa"
+echo $0: $1 $2 $3
+special rotta totta
+echo var1: $var1

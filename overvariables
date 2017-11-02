@@ -1,0 +1,7 @@
+#!/bin/bash
+#testing that {} are indeed necessary when wanting to add character after a variable or if using >= $10
+uid=ebin
+echo $10
+echo ${10}
+echo $uid_
+echo ${uid}_
