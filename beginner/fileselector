@@ -1,0 +1,4 @@
+#!/bin/bash
+#Selects files matching with month, date or with another given argument
+argument=${1:?'Month not given in argument $2'}
+echo  $(ls -l | grep "$argument" | cut -c50-)
