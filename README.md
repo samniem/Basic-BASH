@@ -17,7 +17,7 @@ Contains albumscript.sh and albumcounter files
 give albumcounter as argument for albumscript.sh
 
 ## conditiontests
-checks if a string is null using -n, ! -n, -z and ! -z operators
+checks if a string is null using -n, ! -n, -z and ! -z operations
 
 ## cutdata.sh 
 Cuts a column from a file with multiple columns of data
