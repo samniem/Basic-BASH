@@ -16,6 +16,9 @@ compares strings and if a file actually exists
 Contains albumscript.sh and albumcounter files
 give albumcounter as argument for albumscript.sh
 
+## conditiontests
+checks if a string is null using -n, ! -n, -z and ! -z operators
+
 ## cutdata.sh 
 Cuts a column from a file with multiple columns of data
 randomdata contains the data cutdata.sh uses

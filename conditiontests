@@ -1,0 +1,30 @@
+#!/bin/bash
+str1=''
+
+#using -n (not null) comparison
+if [ -n "$str1" ]; then
+    echo "Not null!"
+else
+    echo "str1 string is null"
+fi
+
+#using -z (is null) comparison
+if [ -z "$str1" ]; then
+    echo "str1 string is null"
+else
+    echo "str1 string is not null"
+fi
+
+#using ! -z (is not null) comparison
+if [ ! -z "$str1" ]; then
+    echo "str1 string is not null"
+else
+    echo "str1 string is null"
+fi
+
+#using ! -n (is not not null) comparison
+if [ ! -n "$str1" ]; then
+    echo "str1 string is null"
+else
+    echo "str1 string is not null"
+fi
