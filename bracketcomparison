@@ -1,0 +1,50 @@
+#!/bin/bash
+
+file="pepperoni"
+string1="pepperoni"
+string2="salami"
+
+#checks to ensure that variables are not NULL
+if [ -z "$file" ]; then
+    echo "file variable doesn't exist."
+    echo "Exiting script"
+    exit 1
+fi
+
+if [ -z "$string1" ]; then
+    echo "string1 variable doesn't exist."
+    echo "Exiting script" 
+    exit 1
+fi
+
+if [ -z "$string2" ]; then
+    echo "string2 variable doesn't exist."
+    echo "Exiting script"
+    exit 1
+fi
+
+#doesnt compare to a real file!
+#compares with "or" statement ||
+if ([ $string1 = $file ] || [ $string2 = $file ]); then
+    echo "We found file $file in string1 $string1 or string2 $string2"
+else
+    echo "We didn't find file $file"
+fi
+
+#compares with "and" statement &&
+if ([ $string1 = $file ] && [ $string2 = $file ]); then
+     echo "We found file $file in string1 $string1 and string2 $string2"
+else
+     echo "We didn't find file $file in both string1 and string2"
+fi
+
+#tries to make the file and checks if it exists
+echo > $file
+if [ -f $file ]; then
+    echo "File $file truly exists"
+else
+    echo "File $file doesn't exist"
+    exit 1
+fi
+
+rm $file

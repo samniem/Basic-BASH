@@ -9,6 +9,10 @@ Using Learning the bash Shell, 3rd edition as basis for exercises, also doing ow
 Reads input file, orders input file lines in reverse numerical order
 and prints n lines to the screen using user input or default value.
 
+## bracketcomparison
+uses [ condition ] to show how they work in general
+compares strings and if a file actually exists
+
 Contains albumscript.sh and albumcounter files
 give albumcounter as argument for albumscript.sh
 
