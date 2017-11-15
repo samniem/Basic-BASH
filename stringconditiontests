@@ -1,0 +1,31 @@
+#!/bin/bash
+
+str1="foo"
+str2="bar"
+str3="foo"
+
+#compares strings using =
+if [ "$str1" = "$str2" ]; then
+    echo "str1 $str1 and str2 $str2 are equal"
+else
+    echo "str1 $str1 and str2 $str2 are not equal"
+fi
+
+if [ "$str1" = "$str3" ]; then
+    echo "str1 $str1 and str3 $str3 are equal"
+else
+    echo "str1 $str1 and str3 $str3 are not equal"
+fi
+
+#compares strings using ! =
+if [ "$str1" != "$str2" ]; then
+    echo "str1 $str1 and str2 $str2 are not equal"
+else
+    echo "str1 $str1 and str2 $str2 are equal"
+fi
+
+if [ "$str1" != "$str3" ]; then
+    echo "str1 $str1 and str3 $str3 are not equal"
+else
+    echo "str1 $str1 and str3 $str3 are equal"
+fi
