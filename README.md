@@ -44,6 +44,10 @@ after a specific variable.
 Showcases how to join different variables together and how to cut specific
 parts from a variable
 
+## servicestatusgrep
+Checks if a service is running or not
+accepts service name as $1 argument
+
 ## stringconditiontests
 compares two strings using =, !=  operations
 

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#test if a service is running
+#give service name in $1 argument
+var2=$1
+var="$(ps -a | grep $var2)"
+echo "$var"
+if echo "$var" | grep -q "$var2"; then
+    echo "service is running: $var2"
+else
+    echo "service is not running: $var2"
+fi
