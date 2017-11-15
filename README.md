@@ -37,7 +37,7 @@ checks if a string is null using -n, ! -n, -z and ! -z operations
 
 ## overvariables
 Demonstrates that {} are necessary wrappers for shell variables in following scenarios:
-variable number is > 10 or when wanting to add lets say character _ or a longer string
+variable number is >= 10 or when wanting to add lets say character _ or a longer string
 after a specific variable.
 
 ## screenerecho.sh
