@@ -1,0 +1,18 @@
+#!/bin/bash
+#taken from Learning the bash Shell, 3rd 
+
+#give starting directory as argument
+
+#if there are folders within the current folder,
+#navigates to the other folders and prints their names
+#and navigates back
+
+file=$1
+echo $file
+
+if [ -d "$file" ]; then
+    cd $file
+    ~/Basic-BASH/tracedir $(ls)
+    cd ..
+fi
+

@@ -51,6 +51,10 @@ accepts service name as $1 argument
 ## stringconditiontests
 compares two strings using =, !=  operations
 
+## tracedir
+Taken from Learning the bash shell, 3rd edition
+Navigates inside further directories and prints said directories
+
 ## whoisloggedin.sh
 
 Retrieves users that are logged in and tries to send them a message
